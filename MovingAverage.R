@@ -59,3 +59,10 @@ autoplot(goldts500lags) +
   ggtitle("Gold Prices: Moving Average 500 lags") +
   xlab("period: Jan 1, 1968 to June 11, 2019") +
   ylab("USD")
+
+goldts1000lags <- ma(goldts, 1000)
+
+autoplot(goldts1000lags) +
+  ggtitle("Gold Prices: Moving Average 1000 lags") +
+  xlab("period: Jan 1, 1968 to June 11, 2019") +
+  ylab("USD")
